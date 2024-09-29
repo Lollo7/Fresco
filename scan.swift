@@ -33,7 +33,7 @@ struct PartResponse: Decodable {
 }
 
 func callGeminiAPI(displayName: String) async throws -> String {
-    guard let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyC39BJ6qdE9-7_UAKj4Xy_nrP1W5V7k5NI") else {
+    guard let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=<API_KEY>") else {
         throw URLError(.badURL)
     }
 
